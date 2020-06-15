@@ -1,0 +1,45 @@
+{
+  "name": "express-starter-kit",
+  "version": "1.0.0",
+  "description": "A starter project using the ExpressJS framework.",
+  "author": "Tyler Burkhardt",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "build": "tsc",
+    "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
+    "dev": "NODE_ENV=dev nodemon",
+    "start": "NODE_ENV=prod node ./dist/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.2",
+    "pg": "^7.12.1",
+    "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.2",
+    "@types/ws": "^6.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.5.3"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-throw-literal": 0
+    }
+  }
+}
